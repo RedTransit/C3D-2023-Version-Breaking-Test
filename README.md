@@ -15,3 +15,7 @@ https://help.autodesk.com/view/CIV3D/2023/ENU/?guid=GUID-6D41D043-4958-40B7-9C7E
 PartsListSet is of PartsListCollection
 PartsListCollection is of StyleCollectionBase
 StyleCollectionBase is of Autodesk.Civil.DatabaseServices.TreeNodeCollectionBase
+
+
+
+To Test, Build the project using 2023.2 references and above and NETLOAD it into Civil 3D 2022 or before. You'll find the error pointing to TreeNodeCollectionBase.
