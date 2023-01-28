@@ -17,9 +17,7 @@ namespace C3d23._2._1_CTest
         #region Properties
         private ACDS.SurfaceStyle _selectedSurfStyle;
 
-        /// <summary>
-        /// Used for storing the selected parts list
-        /// </summary>
+
         public ACDS.SurfaceStyle SelectedSurfStyle
         {
             get => _selectedSurfStyle;
@@ -43,9 +41,6 @@ namespace C3d23._2._1_CTest
 
         private ACDS.PartsList _selectedPartsList;
 
-        /// <summary>
-        /// Used for storing the selected parts list
-        /// </summary>
         public ACDS.PartsList SelectedPartsList
         {
             get => _selectedPartsList;
@@ -58,9 +53,7 @@ namespace C3d23._2._1_CTest
 
         private ObservableCollection<ACDS.PartsList> _partsLists;
 
-        /// <summary>
-        /// List of Parts Lists
-        /// </summary>
+
         public ObservableCollection<ACDS.PartsList> PartsLists
         {
             get => _partsLists;
@@ -82,8 +75,6 @@ namespace C3d23._2._1_CTest
                 try
                 {
                     ACD.Styles.SurfaceStyle surfStyle = C3D.SurfaceStyles.GetSurfaceStyle(surfStyleId);
-                    //IcmNetworkItem icmNetworkItem = new IcmNetworkItem(partList.Name, partList.Name,
-                    //    partList.Handle.ToString(), ErrorCodeEnums.IcmNetworkItemError.None);
 
                     SurfStyles.Add(surfStyle);
                 }
@@ -103,9 +94,6 @@ namespace C3d23._2._1_CTest
                 try
                 {
                     ACD.Styles.PartsList partList = C3D.PartsList.GetPartsList(partListId);
-                    //IcmNetworkItem icmNetworkItem = new IcmNetworkItem(partList.Name, partList.Name,
-                    //    partList.Handle.ToString(), ErrorCodeEnums.IcmNetworkItemError.None);
-                    
                     PartsLists.Add(partList);
                 }
                 catch (Exception e)

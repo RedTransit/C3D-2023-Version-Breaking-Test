@@ -21,8 +21,8 @@ namespace C3d23._2._1_CTest
         public static Database db;
 
         #region Commands
-        [CommandMethod(@"TestPartsList")]
-        public void IcmImport()
+        [CommandMethod(@"Test")]
+        public void Test()
         {
             //Load the Civil Documents
             LoadDocument();
